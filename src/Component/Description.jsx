@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+
 import photo1 from '../assets/alamin001.jpg';
 import linkedinicon from '../assets/iconslinkedin.svg';
 import githubicon from '../assets/iconsgithub.svg';
@@ -16,15 +16,15 @@ const Description = () => {
 
    
 
-  const download = () => {
-    const pdfUrl = "/cv1.pdf"; // Make sure cv1.pdf is in the public folder
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Md_Al-Amin_Hossain_CV.pdf"; // Set a meaningful file name
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const download = () => {
+  //   const pdfUrl = "/cv1.pdf"; // Make sure cv1.pdf is in the public folder
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = "Md_Al-Amin_Hossain_CV.pdf"; // Set a meaningful file name
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
   
 
 
@@ -78,7 +78,7 @@ const Description = () => {
                 <img src={facebookicon} alt="GitHub" className="w-10" />
               </a>
             </div>
-            <button onClick={download} className='btn btn-primary'>Resume</button>
+            <button  className='btn btn-primary'>Resume</button>
           </section>
         </div>
 

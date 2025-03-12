@@ -1,28 +1,22 @@
 
 import { Link, NavLink } from 'react-router-dom';
 import photo1 from '../assets/alamin001.jpg'
-import { a } from 'framer-motion/client';
+
 
 
 const NavBar = () => {
 
-  const download = () => {
-    // Use an absolute path from the root of your deployed site
-    const pdfUrl = "../../dist/cv1.pdf"; // Changed from "/cv1.pdf"
-    
-    // Alternative approach - create a direct link to the file
-    window.open(pdfUrl, '_blank');
-    
-     
-    // Original approach can be kept as fallback
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Md_Al-Amin_Hossain_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    
-  };
+  
+  // const download = () => {
+  //   const pdfUrl = "/cv1.pdf"; // Make sure cv1.pdf is in the public folder
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = "Md_Al-Amin_Hossain_CV.pdf"; // Set a meaningful file name
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+  
 
  
 
@@ -94,7 +88,7 @@ const links = (
     
           {/* Right Section */}
           <div className="navbar-end flex items-center gap-4">
-           <button onClick={download} className='btn'>Resume</button>
+           <button  className='btn'>Resume</button>
           </div>
         </div>
       );
